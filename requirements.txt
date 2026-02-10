@@ -1,26 +1,41 @@
 # Abhedya Air Defense System - Production Dependencies
-# Open-source libraries only, no paid APIs or proprietary services
 # Python 3.10+ required
+# Streamlit Cloud compatible
 
-# Core Data Validation and Models
-pydantic>=2.0.0,<3.0.0          # Data validation and settings management
-typing-extensions>=4.5.0        # Extended type hints support
+# =========================
+# Web UI & Visualization
+# =========================
+streamlit>=1.30.0
+plotly>=5.18.0
 
-# Scientific Computing (for analysis and simulation)
-numpy>=1.24.0,<2.0.0            # Numerical computing
-scipy>=1.10.0,<2.0.0            # Scientific computing algorithms
+# =========================
+# Core Data Validation & Models
+# =========================
+pydantic>=2.0.0,<3.0.0
+typing-extensions>=4.5.0
 
+# =========================
+# Scientific Computing
+# =========================
+numpy>=1.24.0,<2.0.0
+scipy>=1.10.0,<2.0.0
+
+# =========================
 # Configuration Management
-pyyaml>=6.0,<7.0                # YAML configuration file parsing
+# =========================
+pyyaml>=6.0,<7.0
 
-# Logging and Audit
-python-json-logger>=2.0.0,<3.0.0  # Structured JSON logging
+# =========================
+# Logging & Audit
+# =========================
+python-json-logger>=2.0.0,<3.0.0
 
-# Date and Time Handling
-python-dateutil>=2.8.0         # Date/time utilities
+# =========================
+# Date & Time Handling
+# =========================
+python-dateutil>=2.8.0
 
+# =========================
 # Data Serialization
-orjson>=3.9.0                   # Fast JSON serialization (optional, for performance)
-
-# Note: All dependencies are open-source and offline-capable
-# No cloud services, no paid APIs, no proprietary dependencies
+# =========================
+orjson>=3.9.0
